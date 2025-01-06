@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  /* Primary Colors */
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+
+  /* Neutral Colors */
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: var(--dark-blue);
+  font-family: "Manrope", serif;
+  font-weight: 800;
+  font-style: light;
+}
+
+main {
+  width: 530px;
+  padding: 40px;
+  background-color: var(--dark-grayish-blue);
+  text-align: center;
+  border-radius: 15px;
+  position: relative;
+}
+
+h5 {
+  text-transform: uppercase;
+  color: var(--neon-green);
+}
+
+h1 {
+  font-size: 28px;
+  color: white;
+  margin: 20px 0;
+}
+
+.pattern {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.dice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background-color: var(--neon-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 140px;
+  cursor: pointer;
+}
+
+.dice:active {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px,
+              var(--neon-green) 0px 0px 20px 4px;
+}
