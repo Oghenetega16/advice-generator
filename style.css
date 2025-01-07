@@ -24,51 +24,53 @@ body {
   background-color: var(--dark-blue);
   font-family: "Manrope", serif;
   font-weight: 800;
-  font-style: light;
 }
 
 main {
-  width: 530px;
-  padding: 40px;
+  width: clamp(295px, 90%, 34rem);
+  padding: 2.5rem 2.5rem 1.5rem 2.5rem;
   background-color: var(--dark-grayish-blue);
   text-align: center;
-  border-radius: 15px;
-  position: relative;
+  border-radius: 0.9rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h5 {
   text-transform: uppercase;
   color: var(--neon-green);
+  letter-spacing: 0.3rem;
 }
 
 h1 {
-  font-size: 28px;
-  color: white;
-  margin: 20px 0;
+  font-size: clamp(1.5rem, 90%, 1.75rem);
+  color: var(--light-cyan);
+  margin: 1.25rem 0;
 }
 
 .pattern {
   width: 100%;
-  padding: 20px 0;
+  padding: 1.25rem 0 0 0;
 }
 
 .dice {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -30%);
   background-color: var(--neon-green);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   border-radius: 50%;
-  margin-top: 140px;
   cursor: pointer;
+  position: relative;
+  top: 3.4rem;
 }
 
 .dice:active {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px,
               var(--neon-green) 0px 0px 20px 4px;
 }
+
+
